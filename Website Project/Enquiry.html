@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Enquiry - Tech Trend</title>
+  <meta name="description" content="Enquire about iPhone 15, PS5, MacBook availability and pricing at Tech Trend">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="enquiry.html">Enquiry</a>
+</nav>
+
+<h1>Product Enquiry</h1>
+<p>Ask about price, stock, delivery, or bulk orders</p>
+
+<form id="enquiryForm">
+  <input type="text" id="ename" placeholder="Your Name" required>
+  <input type="email" id="eemail" placeholder="Your Email" required>
+  <input type="tel" id="ephone" placeholder="Phone Number" required pattern="[0-9]{10}">
+  <select id="eproduct" required>
+    <option value="">Select Product</option>
+    <option>iPhone 15 Pro Max</option>
+    <option>PlayStation 5 Slim</option>
+    <option>Samsung Galaxy S24 Ultra</option>
+    <option>MacBook Pro M3</option>
+  </select>
+  <textarea id="emessage" placeholder="Your enquiry (e.g. availability, color, delivery)" required minlength="10"></textarea>
+  <button type="submit">Send Enquiry</button>
+</form>
+<p id="enquiryStatus"></p>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
